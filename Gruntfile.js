@@ -1,15 +1,13 @@
 'use strict';
 
-const FONTAWESOME_VERSION = '5.5.0';
+const FONTAWESOME_VERSION = '6.x';
 const jsBanner = `/*!
  * Font Awesome Icon Picker
  * https://farbelous.github.io/fontawesome-iconpicker/
  *
- * @author Javi Aguilar, itsjavi.com
  * @license MIT License
- * @see https://github.com/farbelous/fontawesome-iconpicker/blob/master/LICENSE
  */
- `;
+`;
 
 module.exports = function(grunt) {
     const parsedIconPicker = 'prod/src/js/iconpicker.js';
@@ -20,7 +18,7 @@ module.exports = function(grunt) {
                 src: [
                     'https://raw.githubusercontent.com/FortAwesome/Font-Awesome/' +
                     FONTAWESOME_VERSION +
-                    '/advanced-options/metadata/icons.yml'
+                    '/metadata/icons.yml'
                 ],
                 dest: tempIconsFile
             },
@@ -34,7 +32,13 @@ module.exports = function(grunt) {
                         let targetJSON = {
                             icons: []
                         };
-                        sourceJSON = JSON.parse(sourceJSON);
+                        try {
+                            sourceJSON = JSON.parse(sourceJSON);
+                        } catch (e) {
+                            grunt.log.error('Error parsing YAML to JSON:', e);
+                            return;
+                        }
+
                         Object.keys(sourceJSON).forEach(function(key) {
                             let ele = sourceJSON[key];
                             let icon = 'fa-' + key;

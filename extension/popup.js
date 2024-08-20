@@ -7,7 +7,7 @@
  * https://github.com/farbelous/fontawesome-iconpicker/blob/master/LICENSE
  *
  */
-var FA_CSS_URL = 'https://use.fontawesome.com/releases/v5.0.8/css/all.css';
+var FA_CSS_URL = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css';
 var FA_CSS_CLASSES = {};
 var FA_CACHING_TIME = 7 * 24 * 3600 * 1000; // Cache for 7 days
 
