@@ -7,7 +7,7 @@
  * https://github.com/farbelous/fontawesome-iconpicker/blob/master/LICENSE
  *
  */
-var FA_CSS_URL = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css';
+var FA_CSS_URL = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css';
 var FA_CSS_CLASSES = {};
 var FA_CACHING_TIME = 7 * 24 * 3600 * 1000; // Cache for 7 days
 
@@ -95,7 +95,7 @@ $(function () {
             if (!e.iconpickerValue) {
                 return;
             }
-            var fontFamily = e.iconpickerValue.match(/fab /) ? 'Font Awesome\\ 5 Brands' : 'Font Awesome\\ 5 Free';
+            var fontFamily = e.iconpickerValue.match(/fab /) ? 'Font Awesome\\ 6 Brands' : 'Font Awesome\\ 6 Free';
             var $footer = e.iconpickerInstance.popover.find('.popover-footer').show();
             var cssClassParts = e.iconpickerValue.split(' ');
             var cssClass = cssClassParts.pop();

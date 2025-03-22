@@ -1,5 +1,5 @@
 {
-  "name": "itsjavi/fontawesome-iconpicker",
+  "name": "Nightprince/fontawesome-iconpicker",
   "description": "Font Awesome Icon Picker plugin for Twitter Bootstrap",
   "keywords": [
     "bootstrap",
@@ -12,17 +12,21 @@
   "minimum-stability": "stable",
   "repositories": [{
     "type": "vcs",
-    "url": "https://github.com/farbelous/fontawesome-iconpicker"
+    "url": "https://github.com/Nightprince/fontawesome-iconpicker"
   }],
   "license": "MIT",
   "authors": [
     {
       "name": "Javi Aguilar",
       "role": "Developer"
+    },
+    {
+      "name": "Keramat Jokar (Nightprince)",
+      "role": "Developer"
     }
   ],
   "support": {
-    "issues": "https://github.com/farbelous/fontawesome-iconpicker/issues",
-    "source": "https://github.com/farbelous/fontawesome-iconpicker"
+    "issues": "https://github.com/Nightprince/fontawesome-iconpicker/issues",
+    "source": "https://github.com/Nightprince/fontawesome-iconpicker"
   }
 }
